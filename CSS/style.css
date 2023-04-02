@@ -9,21 +9,24 @@ header {
     align-items: center;
     justify-content: center;
     background: #FFFFFF;
+    flex-direction: column;
 }
 
 .headerFirstDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.headerFirstDiv .fa-solid {
-    width: 30px;
-    height: 30px;
-    margin-left: 24px;
+.headerFirstDiv i {
+    font-size: 30px;
 }
 
 .headerFirstDiv img {
     width: 50%;
     margin-top: 14px;
+    vertical-align: middle;
+}
+
+.headerSecondDiv {
+    display: flex;
+    flex-direction: row;
 }
