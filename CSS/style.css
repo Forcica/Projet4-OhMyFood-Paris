@@ -23,7 +23,7 @@ main {
     justify-content: center;
     background: #fff;
     z-index: 9999;
-    animation: fill 4s;
+    animation: fill 3s;
     animation-fill-mode: forwards;
     pointer-events: none;
 }
@@ -71,7 +71,7 @@ main {
     bottom: 0;
     width: 50px;
     height: 25px;
-    animation: up-wine-contain 4s infinite;
+    animation: up-wine-contain 3s infinite;
 }
 
 @keyframes up-wine-contain {
@@ -86,7 +86,7 @@ main {
     height: 0px;
     background: #AA1717;
     top: 100%;
-    animation: up-wine 4s infinite;
+    animation: up-wine 3s infinite;
 }
 
 @keyframes up-wine {
@@ -112,7 +112,7 @@ main {
     margin-top: -100%;
     border-radius: 40%;
     background: white;
-    animation: wave 6s infinite linear;
+    animation: wave 5s infinite linear;
 }
 
 @keyframes wave {
