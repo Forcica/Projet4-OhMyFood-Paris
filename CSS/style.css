@@ -28,6 +28,16 @@ main {
     pointer-events: none;
 }
 
+.loader h2 {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #101010;
+}
+
 .wine-glass {
     height: 50px;
     width: 50px;
