@@ -230,7 +230,7 @@ header {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 200px;
+    max-width: 360px;
 }   
 
 .bottomChoix {
@@ -332,4 +332,79 @@ footer .containerFooter {
 footer {
     background: #353535;
     color: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+    .headerDiv {
+        height: 96px;
+    }
+
+    .headerDiv img {
+        width: 20%;
+    }
+
+    .topMenuImg img {
+        height: 383px;
+    }
+
+    footer {
+        display: flex;
+        align-items: end;
+        flex-direction: row-reverse;
+        height: 114px;
+        padding: 0;
+        position: relative;
+    }
+
+    footer h3 {
+        width: 137px;
+        bottom: 0;
+        position: relative;
+    }
+
+    footer .containerFooter {
+        width: 100%;
+        justify-content: end;
+        flex-direction: row;
+        display: flex;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+    .containerFooter li {
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: baseline;
+        position: relative;
+        margin: 0 2% 20px 0;
+    }
+
+    .containerFooter .fa-solid {
+        display: flex;
+    }
+
+    .mainPartMenu {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+        padding: 0 10%;
+    }
+
+    .topNameRestau {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topMenuImg {
+        margin-bottom: -30px;
+    }
+
+    .topNameRestau h1 {
+        margin-right: 24px;
+    }
+
+    #headerDivFleche {
+        width: 17px;
+    }
 }

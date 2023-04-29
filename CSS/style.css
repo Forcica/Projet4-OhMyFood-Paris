@@ -66,9 +66,11 @@ main {
     0% {
         opacity: 1;
     }
+
     65% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -85,8 +87,13 @@ main {
 }
 
 @keyframes up-wine-contain {
-    from { transform: translateY(0);}
-    to { transform: translateY(-25px);}
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-25px);
+    }
 }
 
 .container::after {
@@ -100,15 +107,21 @@ main {
 }
 
 @keyframes up-wine {
-    from { height: 0px;}
-    to { height: 25px;}
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 25px;
+    }
 }
 
 .wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    ;
     overflow: hidden;
 }
 
@@ -126,8 +139,13 @@ main {
 }
 
 @keyframes wave {
-    from { transform: rotate(0deg);}
-    from { transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
 }
 
 /* FIN LOADER */
@@ -226,9 +244,18 @@ header {
 }
 
 .containerFonctionnement {
-    display: grid;
     padding: 48px 20px 68px 20px;
     place-items: center;
+}
+
+.listeChoixRestaurant {
+    display: flex;
+    flex-direction: column;
+}
+
+.listeChoixRestaurant div {
+    width: 100%;
+    margin-right: 5%;
 }
 
 .containerFonctionnement h2 {
@@ -236,17 +263,11 @@ header {
     font-weight: 700;
     margin-bottom: 20px;
     margin-right: auto;
-    position: relative;
-}   
-
-.listeChoixRestaurant {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    width: 100%;
+    /* position: relative; */
 }
 
 .buttonChoixRestaurant {
+    position: relative;
     height: 72px;
     width: 100%;
     cursor: pointer;
@@ -260,6 +281,52 @@ header {
     align-items: center;
 }
 
+.buttonChoixRestaurant:nth-child(1)::before {
+    position: absolute;
+    left: -8px;
+    content: "1";
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+}
+
+.buttonChoixRestaurant:nth-child(2)::before {
+    position: absolute;
+    left: -8px;
+    content: "2";
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+}
+
+.buttonChoixRestaurant:nth-child(3)::before {
+    position: absolute;
+    left: -8px;
+    content: "3";
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+}
+
+/* .listeChoixRestaurant {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    width: 100%;
+} */
+
 .buttonChoixRestaurant p {
     width: 70%;
     display: flex;
@@ -270,9 +337,9 @@ header {
 
 .buttonChoixRestaurant i {
     width: 16px;
-    padding-left: 10%;
     display: flex;
     justify-content: space-around;
+    margin-right: 2%;
 }
 
 .buttonChoixRestaurant:hover i {
@@ -311,7 +378,7 @@ header {
 .cardRestaurant h4 {
     background: #99E2D0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 2px; 
+    border-radius: 2px;
     color: #008766;
     font-family: 'Roboto';
     font-weight: 500;
@@ -435,7 +502,7 @@ footer a {
     align-items: center;
 }
 
-.containerFooter .fa-solid  {
+.containerFooter .fa-solid {
     font-size: 13px;
     line-height: 11px;
     padding-right: 10px;
@@ -457,14 +524,14 @@ footer {
 
 /* RESPONSIVE */
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .headerDiv {
         height: 96px;
     }
 
     .headerDiv img {
-       width: 200px;
-    } 
+        width: 200px;
+    }
 
     .containerExplorerRestau h2 {
         font-size: 40px;
@@ -480,6 +547,7 @@ footer {
 
     footer {
         display: flex;
+        align-items: end;
         flex-direction: row-reverse;
         height: 114px;
         padding: 0;
@@ -487,14 +555,14 @@ footer {
     }
 
     footer h3 {
-        margin-bottom: 0;
         width: 137px;
         bottom: 0;
         position: relative;
     }
 
     footer .containerFooter {
-        justify-content: center;
+        width: 100%;
+        justify-content: end;
         flex-direction: row;
         display: flex;
         position: relative;
@@ -507,18 +575,88 @@ footer {
         padding-bottom: 0;
         align-items: baseline;
         position: relative;
-        width: 168px;
+        margin: 0 2% 20px 0;
     }
 
     .containerFooter .fa-solid {
         display: flex;
     }
 
-    #partTwo {
-        width: 130px;
+    .containerFonctionnement {
+        padding: 48px 10% 68px 10%;
     }
 
-    #partOne {
-        width: 168px;
+    .listeChoixRestaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .listeChoixRestaurant .buttonChoixRestaurant {
+        width: 30%;
+        margin: 0 2% 0 0;
+        position: relative;
+    }
+
+    .buttonChoixRestaurant:nth-child(1)::before {
+        position: absolute;
+        left: -16px;
+        content: "1";
+        background-color: #9356DC;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        color: white;
+        line-height: 1.5em;
+    }
+
+    .buttonChoixRestaurant:nth-child(2)::before {
+        position: absolute;
+        left: -16px;
+        content: "2";
+        background-color: #9356DC;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        color: white;
+        line-height: 1.5em;
+    }
+
+    .buttonChoixRestaurant:nth-child(3)::before {
+        position: absolute;
+        left: -16px;
+        content: "3";
+        background-color: #9356DC;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        color: white;
+        line-height: 1.5em;
+    }
+
+    .buttonChoixRestaurant {
+        justify-content: initial;
+    }
+
+    .buttonChoixRestaurant i {
+        margin: 0 10% 0 5%;
+    }
+
+    .boxChoixRestaurants {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10%;
+        margin-bottom: 2%;
+    }
+
+    .containerChoixRestaurants {
+        padding: 0 10%;
+    }
+
+    .cardRestaurant img {
+        height: 230px;
     }
 }
