@@ -189,7 +189,7 @@ header {
     left: 100%;
     height: 100%;
     width: 60px;
-    background: #99E2D0 url(./images/check.png) no-repeat center;
+    background: #99E2D0 url(../images/check.png) no-repeat center;
     transition: .25s;
 }
 
