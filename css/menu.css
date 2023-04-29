@@ -128,13 +128,13 @@ header {
     cursor: pointer;
     width: 23px;
     height: 22px;
-    background: url(OhMyFoodParis/images/clean_liked.png) no-repeat center;
+    background: url(../images/clean_liked.png) no-repeat center;
     transition: .25s;
     margin-right: 41px;
 }
 
 .topHeart:hover {
-    background: url(OhMyFoodParis/images/status_liked.png) no-repeat center;
+    background: url(../images/status_liked.png) no-repeat center;
 }
 
 .titrePartieRestau {
