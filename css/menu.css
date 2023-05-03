@@ -334,6 +334,8 @@ footer {
     color: #FFFFFF;
 }
 
+/* RESPONSIVE */
+
 @media (min-width: 1024px) {
     .headerDiv {
         height: 96px;
